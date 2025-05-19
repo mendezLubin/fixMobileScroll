@@ -12,5 +12,12 @@ body {
 
 .mainContainer {
     /* height: 100vh; */
-    height: calc(var(--vh, 1vh) * 100);  /* Fixing mobile scroll */
+    height: calc(var(--vh, 1vh) * 100);
+    /* If I use height: 100vh, it works well on desktop and laptop devices, 
+    but not on mobile devices, because it causes unwanted scroll.
+    On mobile, 100vh includes the browser UI (like the address bar), 
+    which leads to layout issues.
+    This uses a custom CSS variable (--vh), set via JavaScript.
+    There is another piece of JS code that works together with this CSS 
+    to reflect the actual visible viewport height. */
 }
