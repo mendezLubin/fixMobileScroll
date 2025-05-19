@@ -5,11 +5,11 @@ It fixes the 100vh issue on mobile devices by excluding the browser UI (like the
 The --vh variable is then used in CSS to apply the correct height.
 This function runs on load and updates on window resize to keep the value accurate.
 */
-function setVh() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", vh + "px");
-}
-setVh();
-window.addEventListener("resize", setVh);
+// function setVh() {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", vh + "px");
+// }
+// setVh();
+// window.addEventListener("resize", setVh);
 
 

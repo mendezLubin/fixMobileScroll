@@ -11,8 +11,10 @@ body {
 }
 
 .mainContainer {
+    background-color: rgb(103, 103, 103);
+    /* Let content take up only the space it needs without using any height settings */
     /* height: 100vh; */
-    height: calc(var(--vh, 1vh) * 100);
+    /* height: calc(var(--vh, 1vh) * 100); */
     /* If I use height: 100vh, it works well on desktop and laptop devices, 
     but not on mobile devices, because it causes unwanted scroll.
     On mobile, 100vh includes the browser UI (like the address bar), 
